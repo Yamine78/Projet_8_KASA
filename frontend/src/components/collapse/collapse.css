@@ -1,0 +1,31 @@
+.collapse-item {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.collapse-btn {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border: none !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+}
+
+/* FLÈCHE  */
+.chevron-icon {
+  width: 32px !important;           
+  height: 32px !important;          
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+/* 🔽 MOBILE (max 768px) */
+@media (max-width: 768px) {
+  .chevron-icon {
+    width: 24px !important;    /* un peu plus petite sur mobile si tu veux */
+    height: 24px !important;
+  }
+}

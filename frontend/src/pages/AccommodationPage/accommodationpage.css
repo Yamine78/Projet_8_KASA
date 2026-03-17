@@ -1,0 +1,223 @@
+.accommodation-main {
+  max-width: 100%;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
+/* CARROUSEL PLEINE LARGEUR +5px chaque côté */
+.slider-section {
+  position: relative;
+  width: 100%;
+  max-width: calc(1240px + 10px);  /* ← +5px gauche +5px droite */
+  height: 415px;
+  border-radius: 25px;             /* ← RADIUS 25px RETOURNÉ */
+  overflow: hidden;
+  margin: 0 auto 20px;             /* ← 20px avant header */
+  padding: 0 ;                 /* ← Padding réduit */
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;             /* ← RADIUS image aussi */
+}
+.slider-count {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);  /* ← CENTRE parfait */
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  padding: 4px 12px;
+  background: transparent;      /* ← SANS FOND */
+  line-height: 1;
+}
+
+/* FLÈCHES BLANCHES SANS BACKGROUND */
+.slider-prev, .slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 100px;
+  border: none;
+  background: transparent;         /* ← PAS DE BACKGROUND ! */
+  color: white;
+  font-size: 42px;                 /* ← ENCORE PLUS GRAND */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.slider-prev { left: 20px; }       /* ← 5px plus à gauche */
+.slider-next { right: 20px; }      /* ← 5px plus à droite */
+
+
+
+/* HEADER */
+.info-section {
+  max-width: 1240px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.info-left {
+  flex: 1;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF6060;
+  margin: 15px 0  5px 0;
+}
+
+.location {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  width: 115px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #FF6060;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* HOST */
+.info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-info {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.host-firstname, .host-lastname {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.host-picture-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #C4C4C4;
+}
+
+.host-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ÉTOILES MÊME TAILLE */
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating-star {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  display: block;
+}
+.rating-star[src*="no-active"] {
+  transform: scale(0.7);
+}
+
+/* COLLAPSES */
+.collapses-container {
+  max-width: 1240px;
+  margin: 0 auto 40px;             /* ← + ESPACE AVANT FOOTER (40px) */
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.collapses-container .collapse-btn {
+  height: 52px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background: #FF6060 !important;
+  color: white !important;
+}
+
+.collapses-container .chevron-icon {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+ 
+.equipments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.equipments-list li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 2px;
+}
+.collapse-content p {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+/*  fond gris très léger dans le contenu des collapses */
+.collapses-container .collapse-content {
+  background: #F6F6F673;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
