@@ -37,11 +37,11 @@ function AccommodationPage() {
     return null;
   }
 
-  const nextImage = () => setCurrentImage((prev) => 
+  const nextImage = () => setCurrentImage((prev) =>
     prev === logement.pictures.length - 1 ? 0 : prev + 1
   );
-  
-  const prevImage = () => setCurrentImage((prev) => 
+
+  const prevImage = () => setCurrentImage((prev) =>
     prev === 0 ? logement.pictures.length - 1 : prev - 1
   );
 
@@ -51,8 +51,8 @@ function AccommodationPage() {
     <main className="accommodation-main">
       {/* CARROUSEL */}
       <section className="slider-section">
-        <img 
-          src={logement.pictures[currentImage]} 
+        <img
+          src={logement.pictures[currentImage]}
           alt={logement.title}
           className="slider-image"
         />
@@ -87,8 +87,8 @@ function AccommodationPage() {
               <p className="host-lastname">{logement.host.name.split(' ').slice(1).join(' ')}</p>
             </div>
             <div className="host-picture-wrapper">
-              <img 
-                src={logement.host.picture} 
+              <img
+                src={logement.host.picture}
                 alt={logement.host.name}
                 className="host-picture"
               />
@@ -97,9 +97,9 @@ function AccommodationPage() {
 
           {/* ÉTOILES PNG */}
           <div className="rating-stars">
-            {Array.from({length: 5}, (_, i) => (
-              <img 
-                key={i} 
+            {Array.from({ length: 5 }, (_, i) => (
+              <img
+                key={i}
                 src={i < rating ? starActive : starNoActive}
                 alt={`${i + 1} étoile`}
                 className="rating-star"
@@ -109,10 +109,10 @@ function AccommodationPage() {
         </div>
       </section>
 
-      {/* COLLAPSES */}
+      {/* les COLLAPSES */}
       <section className="collapses-container">
         <Collapse title="Description" content={logement.description} />
-        <Collapse 
+        <Collapse
           title="Équipements"
           content={
             <ul className="equipments-list">

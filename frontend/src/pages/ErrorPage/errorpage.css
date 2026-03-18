@@ -27,13 +27,51 @@
 }
 
 .error-link {
-  color: #000000;          
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
-  text-decoration: underline;  
+  text-decoration: underline;
   margin-top: 50px;
 }
 
 .error-link:hover {
-  color: #FF6060;          
+  color: #FF6060;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .error-page {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .error-code {
+    font-size: 96px !important;
+    color: #FF6060 !important;
+    margin: 60px auto 40px auto !important;
+    line-height: 1 !important;
+    display: block !important;
+    width: auto !important;
+  }
+
+  .error-message {
+    color: #FF6060 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    max-width: 230px !important;
+    margin: 0 auto 60px auto !important;
+    line-height: 1.4 !important;
+    word-wrap: break-word !important;
+  }
+
+  .error-link {
+    color: #000 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-decoration: underline !important;
+    margin: 60px auto 40px auto !important;
+    display: inline-block !important;
+  }
 }
