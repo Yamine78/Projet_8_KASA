@@ -50,22 +50,35 @@ function AccommodationPage() {
   return (
     <main className="accommodation-main">
       {/* CARROUSEL */}
-      <section className="slider-section">
+    <section className="slider-section">
+  <img
+    src={logement.pictures[currentImage]}
+    alt={logement.title}
+    className="slider-image"
+  />
+
+  {logement.pictures.length > 1 && (
+    <>
+      <button className="slider-prev" onClick={prevImage}>
         <img
-          src={logement.pictures[currentImage]}
-          alt={logement.title}
-          className="slider-image"
+          src={arrowLeftCarrousel}
+          alt="Précédent"
+          className="carousel-arrow-img"
         />
-        <button className="slider-prev" onClick={prevImage}>
-          <img src={arrowLeftCarrousel} alt="Précédent" className="carousel-arrow-img" />
-        </button>
-        <button className="slider-next" onClick={nextImage}>
-          <img src={arrowRightCarrousel} alt="Suivant" className="carousel-arrow-img" />
-        </button>
-        <p className="slider-count">
-          {currentImage + 1}/{logement.pictures.length}
-        </p>
-      </section>
+      </button>
+      <button className="slider-next" onClick={nextImage}>
+        <img
+          src={arrowRightCarrousel}
+          alt="Suivant"
+          className="carousel-arrow-img"
+        />
+      </button>
+      <p className="slider-count">
+        {currentImage + 1}/{logement.pictures.length}
+      </p>
+    </>
+  )}
+</section>
 
       {/* HEADER */}
       <section className="info-section">

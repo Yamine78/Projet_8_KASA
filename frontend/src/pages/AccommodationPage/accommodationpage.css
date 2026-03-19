@@ -221,7 +221,37 @@
 }
 
 
- /* mobile  */
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Bannière logements 100% */
+  .logement-card img,
+  .slider-section {
+    width: 100% !important;
+    height: 255px !important;
+    object-fit: cover !important;
+    margin: 0 24px !important;
+  }
+  
+  /* Titre bannière 1 ligne */
+  .banner-title {
+    white-space: nowrap !important;
+    font-size: 48px !important;
+    text-align: center !important;
+  }
+}
+
+
+
+
+
+
+
+ /* Responsive mobile  */
 
 @media screen and (max-width: 767px) {
 

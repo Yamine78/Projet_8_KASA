@@ -14,18 +14,24 @@
   cursor: pointer !important;
 }
 
-/* FLÈCHE  */
 .chevron-icon {
-  width: 32px !important;           
-  height: 32px !important;          
+  width: 32px !important;
+  height: 32px !important;
   object-fit: contain !important;
   flex-shrink: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transform: rotate(0deg) !important;     /* ↓ fermée (haut-droite-bas) */
 }
+
+.chevron-icon.rotated {
+  transform: rotate(180deg) !important;   
+}
+
 
 /* 🔽 MOBILE (max 768px) */
 @media (max-width: 768px) {
   .chevron-icon {
-    width: 24px !important;    /* un peu plus petite sur mobile si tu veux */
+    width: 24px !important;    
     height: 24px !important;
   }
 }

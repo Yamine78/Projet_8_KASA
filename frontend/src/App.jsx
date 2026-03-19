@@ -20,6 +20,7 @@ function App() {
         
         
         <Route path="*" element={<ErrorPage />} />
+         <Route index element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   )

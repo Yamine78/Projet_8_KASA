@@ -15,10 +15,11 @@ function Collapse({ title, content }) {
       >
         <h2>{title}</h2>
         <img 
-          src={isOpen ? arrowOpen : arrowClose} 
-          alt="" 
-          className="chevron-icon"
-        />
+  src={arrowClose}  // ← TOUJOURS arrowClose
+  alt="" 
+  className={`chevron-icon ${isOpen ? 'rotated' : ''}`}  // ← AJOUTE classe rotated
+/>
+
       </button>
       {isOpen && <div className="collapse-content">{content}</div>}
     </article>
