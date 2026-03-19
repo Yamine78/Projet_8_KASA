@@ -19,8 +19,8 @@
   height: 32px !important;
   object-fit: contain !important;
   flex-shrink: 0 !important;
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  transform: rotate(0deg) !important;     /* ↓ fermée (haut-droite-bas) */
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transform: rotate(0deg) !important;     
 }
 
 .chevron-icon.rotated {
@@ -29,9 +29,35 @@
 
 
 /* 🔽 MOBILE (max 768px) */
+
 @media (max-width: 768px) {
   .chevron-icon {
     width: 24px !important;    
     height: 24px !important;
   }
 }
+
+.collapse-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;  
+}
+
+.collapse.open .collapse-content-wrapper {
+  max-height: 300px;  
+  opacity: 1;
+}
+
+
+  .collapse-content p,
+  .equipments-list li,
+  .collapses-container .collapse-btn span,
+  .collapse-btn {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    line-height: 143% !important;  
+    letter-spacing: 0 !important;
+  }
+

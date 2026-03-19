@@ -31,6 +31,19 @@
     margin: 20px auto;
     padding: 0 16px;
   }
+ 
+  .collapse-content p,
+  .equipments-list li,
+  .collapses-container .collapse-btn span,
+  .collapse-btn {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    line-height: 143% !important;  
+    letter-spacing: 0 !important;
+  }
+
+
 
   .about-collapses .collapse-item {
     height: auto;              /* la hauteur s’adapter au contenu */

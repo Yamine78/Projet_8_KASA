@@ -227,28 +227,37 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* SLIDER SEUL */
   .slider-section {
+    max-width: 100%;
     width: 100%;
-    max-width: 1000px;
     height: 255px;
-    margin: 40px auto 40px;  /* ← + ESPACE HAUT/BAS */
+    margin: 0 auto 20px auto;  /* centré */
     padding: 0;
     border-radius: 15px;
   }
 
+  /* On laisse les images de cartes comme tu veux, mais séparées */
+  .logement-card img {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+  }
+
+  /* INFO SOUS LE SLIDER, BIEN CENTRÉE */
   .info-section {
-    max-width: 1000px;
-    margin: 40px auto 30px;  /* ← DESCEND LE TEXTE */
-    padding: 0 30px;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 20 30px;  /* un peu de marge intérieure */
   }
 
   .collapses-container {
-    max-width: 1000px;
-    margin: 0 auto 100px;    /* ← + ESPACE AVANT FOOTER */
-    padding: 0 30px;
+    max-width: 100%;
+    margin: 0 auto 0px auto; /* un peu plus d’espace avant le footer */
+    padding: 0 24px;
   }
 }
-
 
 
 
@@ -274,9 +283,14 @@
     padding: 0 ;
     border-radius: 10px ;
   }
-  
-  .slider-prev { left: 10px !important; }
-  .slider-next { right: 10px !important; }
+  .carousel-arrow-img {
+  width: 24px !important;
+  height: 24px !important;
+  opacity: 1 !important;
+}
+
+  .slider-prev { left: 0px !important; }
+  .slider-next { right: 0px !important; }
   
   /* INFO */
   .info-section {
@@ -299,7 +313,7 @@
     flex-direction: row ;
     justify-content: space-between ;
     align-items: center ;
-    gap: 60px ;
+    gap: 45px ;
     padding: 0 ;
   }
   
@@ -307,7 +321,7 @@
     display: flex ;
     flex-direction: row ;
     align-items: center ;
-    gap: 15px ;
+    gap: 10px ;
     flex: 1 ;
     padding: 0 ;
   }
