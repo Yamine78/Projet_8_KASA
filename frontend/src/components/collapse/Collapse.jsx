@@ -17,7 +17,7 @@ function Collapse({ title, content }) {
         <img 
   src={arrowClose}  // ← TOUJOURS arrowClose
   alt="" 
-  className={`chevron-icon ${isOpen ? 'rotated' : ''}`}  // ← AJOUTE classe rotated
+  className={`chevron-icon ${isOpen ? 'rotated' : ''}`} 
 />
 
       </button>

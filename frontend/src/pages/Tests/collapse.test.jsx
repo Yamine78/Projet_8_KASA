@@ -22,7 +22,7 @@ describe('Collapse', () => {
 
   test('afficher la description au clik', () => {
    const {container  } =render(<Collapse title="Fiabilité">Contenu</Collapse>);
-   let trigger= container.querySelector('.collapse-arrow')
+   let trigger= container.querySelector('.chevron-icon')
     fireEvent.click(trigger)
       let content= container.querySelector('.collapse-content')
     expect(content).toBeInTheDocument();
